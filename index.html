@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden's Electrical Engineering Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2.5rem 0 2rem 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li { margin: 0 1rem; }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        main { padding: 2rem 0; }
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.13);
+        }
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .project-card .tech-stack {
+            color: #667eea;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .project-card p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        .project-links a {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        .project-links a:hover { background: #5a67d8; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+        }
+        .skill-category h4 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .contact-info {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+        }
+        .contact-links a:hover { opacity: 0.8; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .project-grid { grid-template-columns: 1fr; }
+            nav ul { flex-direction: column; align-items: center; }
+            nav ul li { margin: 0.25rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hi, I'm Eden – Electrical Engineer</h1>
+            <p class="subtitle">Building circuits, systems, and a better-connected world.</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m passionate about designing and building things that make a difference. From RF systems to embedded controllers, I enjoy the challenge of turning ideas into working hardware. My journey has taken me from soldering my first circuit in high school to leading complex projects in wireless communication and robotics. I believe the best engineering happens at the intersection of creativity and precision.<br><br>
+                When I’m not tinkering with circuits, you’ll find me exploring new tech, hiking, or playing chess. I love collaborating with others who are curious and driven to solve real-world problems.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Open-Source Signal Toolkit</h3>
+                    <div class="tech-stack">Python • NumPy • SciPy • Matplotlib</div>
+                    <p>
+                        Born out of a need for better tools in my university lab, this project implements advanced signal processing algorithms and visualization tools. I learned a ton about digital filtering and the quirks of real-world data.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ehgbl/signal-processing" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Custom RISC-V Processor</h3>
+                    <div class="tech-stack">C++ • RISC-V Assembly • SystemVerilog</div>
+                    <p>
+                        I designed and implemented a custom RISC-V processor with instruction pipeline optimization. This project pushed me to dive deep into hardware-software co-design and performance analysis.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ehgbl/riscv" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Robotics Sensor Hub</h3>
+                    <div class="tech-stack">C • Embedded • PCB Design • I2C/SPI</div>
+                    <p>
+                        A modular sensor hub for robotics projects, featuring plug-and-play support for multiple sensor types. I focused on robust firmware and reliable hardware interfaces, and learned a lot about debugging embedded systems in the wild.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ehgbl/robotics-sensor-hub" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Circuit Design & Analysis</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Altium Designer</span>
+                        <span class="skill-tag">LTspice</span>
+                        <span class="skill-tag">PCB Layout</span>
+                        <span class="skill-tag">Schematic Design</span>
+                        <span class="skill-tag">Signal Integrity</span>
+                        <span class="skill-tag">Power Analysis</span>
+                        <span class="skill-tag">Impedance Control</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>RF & Communications</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RF Testing</span>
+                        <span class="skill-tag">Antenna Design</span>
+                        <span class="skill-tag">EMI/EMC</span>
+                        <span class="skill-tag">Wireless Systems</span>
+                        <span class="skill-tag">Bluetooth LE</span>
+                        <span class="skill-tag">Spectrum Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Programming & Development</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++ (favorite for embedded)</span>
+                        <span class="skill-tag">Python (for quick prototyping)</span>
+                        <span class="skill-tag">VHDL</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Currently learning: Rust</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware & Test Equipment</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Oscilloscopes</span>
+                        <span class="skill-tag">Spectrum Analyzers</span>
+                        <span class="skill-tag">FPGA Development</span>
+                        <span class="skill-tag">I2C/SPI/USB</span>
+                        <span class="skill-tag">Hardware Debugging</span>
+                        <span class="skill-tag">Calibration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
