@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Engineering Portfolio</title>
+  <title>Software Engineering Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -18,9 +18,10 @@
 </head>
 <body class="bg-gray-50">
   <header class="bg-gradient-to-r from-indigo-200 to-purple-200 py-10 text-center shadow">
-    <h1 class="text-4xl md:text-5xl font-bold gradient-text">Engineering Portfolio</h1>
-    <p class="text-lg text-gray-700 mt-2">Building circuits, systems, and a better-connected world.</p>
+    <h1 class="text-4xl md:text-5xl font-bold gradient-text">Software Engineering Portfolio</h1>
+    <p class="text-lg text-gray-700 mt-2">Backend, systems, and data-driven projects.</p>
   </header>
+
   <nav class="bg-white shadow sticky top-0 z-10">
     <ul class="flex justify-center space-x-8 py-4 text-indigo-700 font-semibold">
       <li><a href="#about" class="hover:underline">About</a></li>
@@ -28,73 +29,32 @@
       <li><a href="#skills" class="hover:underline">Skills</a></li>
     </ul>
   </nav>
+
   <main class="max-w-6xl mx-auto px-4 py-8">
     <section id="about" class="mb-12">
       <h2 class="text-2xl font-bold text-indigo-700 mb-4">About Me</h2>
       <p class="text-gray-700 leading-relaxed">
-        I'm excited about designing and building things that make a difference. I enjoy the challenge of turning ideas into working solutions, with a focus on hardware design, digital systems, and embedded technologies.<br><br>
+        I’m a software-leaning engineer who builds reliable systems and data-backed features.
+        Recent work includes Python web backends (Flask/SQLite), automation, and C++ systems code.
+        I like turning messy requirements into clean APIs and testable components.
       </p>
     </section>
+
     <section id="projects" class="mb-12">
       <h2 class="text-2xl font-bold text-indigo-700 mb-4">Featured Projects</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- PS2 Keyboard Interface Controller -->
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col border-l-4 border-indigo-500">
-          <div class="flex items-center mb-2">
-            <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">PS2 Keyboard Interface Controller</h3>
-          </div>
-          <div class="text-sm text-indigo-600 mb-2">VHDL • Digital Interface Design • Protocol Implementation</div>
-          <p class="text-gray-700 mb-4">
-            Designed and implemented a complete PS/2 keyboard interface controller in VHDL with protocol handling, state machine design, and comprehensive verification methodology for hardware interface systems.
-          </p>
-          <div class="flex space-x-3 mt-auto">
-            <a href="https://github.com/ehgbl/PS2_Keyboard_Interface_Controller" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
-            <span class="bg-blue-100 text-blue-700 px-3 py-2 rounded text-sm">Recent</span>
-          </div>
-        </div>
-        
-        <!-- Custom RISC-V Processor - Enhanced description -->
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
-          <div class="flex items-center mb-2">
-            <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">Custom RISC-V Processor</h3>
-          </div>
-          <div class="text-sm text-indigo-600 mb-2">C++ • RISC-V Assembly • SystemVerilog</div>
-          <p class="text-gray-700 mb-4">
-            Designed and implemented a custom RISC-V processor with instruction pipeline optimization, cache hierarchy implementation, and comprehensive verification methodology. Focused on performance analysis and hardware-software interface validation.
-          </p>
-          <div class="flex space-x-3 mt-auto">
-            <a href="https://github.com/ehgbl/riscv" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
-          </div>
-        </div>
 
-        <!-- Custom Processor Design - Enhanced description -->
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
-          <div class="flex items-center mb-2">
-            <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">Custom Processor Design</h3>
-          </div>
-          <div class="text-sm text-indigo-600 mb-2">Verilog • FPGA • Digital Circuit Design</div>
-          <p class="text-gray-700 mb-4">
-            Designed and implemented a custom processor architecture using Verilog with modular components including optimized ALU, register bank, and control units. Features comprehensive verification methodologies and power-performance analysis.
-          </p>
-          <div class="flex space-x-3 mt-auto">
-            <a href="https://github.com/ehgbl/custom-processor" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
-          </div>
-        </div>
-
-        <!-- IoT Sensor Network -->
+        <!-- IoT Sensor Network (keep) -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col">
           <div class="flex items-center mb-2">
             <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
             <h3 class="text-xl font-semibold text-gray-900">IoT Sensor Network</h3>
           </div>
-          <div class="text-sm text-indigo-600 mb-2">Raspberry Pi • Python • Flask • SQLite • DHT22</div>
+          <div class="text-sm text-indigo-600 mb-2">Python • Flask • SQLite • Raspberry Pi</div>
           <p class="text-gray-700 mb-4">
-            Built a distributed sensor network using Raspberry Pi and DHT22 sensors. Created a real-time web dashboard with data visualization, automated data logging, and monitoring with live weather API integration.
+            Built a small backend that ingests sensor data, stores it in SQLite, and serves a real-time dashboard.
+            Added a simple weather API integration and lightweight auth.
           </p>
-          <!-- Live Weather API Demo -->
           <div class="bg-indigo-50 rounded p-3 mb-4" id="weather-demo">
             <div class="flex items-center space-x-2 mb-2">
               <span class="font-semibold text-indigo-700 text-sm">Live Weather Demo:</span>
@@ -108,134 +68,91 @@
           </div>
         </div>
 
-        <!-- gem5 x86 CPU Simulation -->
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col border-l-4 border-purple-500">
-          <div class="flex items-center mb-2">
-            <span class="inline-block w-2 h-8 bg-gradient-to-b from-purple-400 to-indigo-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">gem5 x86 CPU Simulation</h3>
-          </div>
-          <div class="text-sm text-purple-600 mb-2">Python • gem5 • CPU Architecture • Performance Analysis</div>
-          <p class="text-gray-700 mb-4">
-            Advanced CPU simulation and performance characterization using gem5 simulator for x86 architectures. Implemented workload analysis, cache performance optimization, and power-performance tradeoff investigations.
-          </p>
-          <div class="flex space-x-3 mt-auto">
-            <a href="https://github.com/ehgbl/gem5x86-CPUSimulation" target="_blank" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition text-sm">View Code</a>
-            <span class="bg-blue-100 text-blue-700 px-3 py-2 rounded text-sm">Recent</span>
-          </div>
-        </div>
-
-        <!-- Signal Processing Framework -->
+        <!-- Device Driver Development (keep for systems SWE) -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col">
           <div class="flex items-center mb-2">
             <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">Signal Processing Framework</h3>
+            <h3 class="text-xl font-semibold text-gray-900">Device Driver Development</h3>
           </div>
-          <div class="text-sm text-indigo-600 mb-2">Python • NumPy • SciPy • Digital Signal Processing</div>
+          <div class="text-sm text-indigo-600 mb-2">C++ • System Programming</div>
           <p class="text-gray-700 mb-4">
-            Correlation-based detection system for identifying embedded signals in noisy environments. Implemented advanced signal processing algorithms including FFT analysis, digital filtering, and spectral analysis.
+            Implemented a low-level driver with robust error handling and tests.
+            Focused on clean interfaces, logging, and performance profiling.
+          </p>
+          <div class="flex space-x-3 mt-auto">
+            <a href="https://github.com/ehgbl/devicedriver" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
+          </div>
+        </div>
+
+        <!-- Signal Processing Framework (keep) -->
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <div class="flex items-center mb-2">
+            <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
+            <h3 class="text-xl font-semibold text-gray-900">Signal Processing Toolkit</h3>
+          </div>
+          <div class="text-sm text-indigo-600 mb-2">Python • NumPy • SciPy</div>
+          <p class="text-gray-700 mb-4">
+            Built a small library for correlation-based detection, FFT utilities, and filters.
+            Wrote unit tests and benchmarks; packaged with a simple CLI.
           </p>
           <div class="flex space-x-3 mt-auto">
             <a href="https://github.com/ehgbl/signalprocessing" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
           </div>
         </div>
 
-        <!-- Device Driver Development -->
+        <!-- gem5 (optional; keep if targeting systems) -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col">
           <div class="flex items-center mb-2">
-            <span class="inline-block w-2 h-8 bg-gradient-to-b from-indigo-400 to-purple-400 rounded mr-3"></span>
-            <h3 class="text-xl font-semibold text-gray-900">Device Driver Development</h3>
+            <span class="inline-block w-2 h-8 bg-gradient-to-b from-purple-400 to-indigo-400 rounded mr-3"></span>
+            <h3 class="text-xl font-semibold text-gray-900">CPU Simulation & Profiling</h3>
           </div>
-          <div class="text-sm text-indigo-600 mb-2">C++ • System Programming • Hardware Interface</div>
+          <div class="text-sm text-purple-600 mb-2">Python • gem5 • Perf Analysis</div>
           <p class="text-gray-700 mb-4">
-            Low-level device driver implementation demonstrating hardware-software interface design, system-level programming, and kernel module development with comprehensive error handling and performance optimization.
+            Automated workloads and collected perf counters to study caching trade-offs.
+            Produced reproducible scripts and charts for comparisons.
           </p>
           <div class="flex space-x-3 mt-auto">
-            <a href="https://github.com/ehgbl/devicedriver" target="_blank" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition text-sm">View Code</a>
+            <a href="https://github.com/ehgbl/gem5x86-CPUSimulation" target="_blank" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition text-sm">View Code</a>
           </div>
         </div>
+
       </div>
     </section>
-    
+
     <section id="skills">
       <h2 class="text-2xl font-bold text-indigo-700 mb-4">Technical Skills</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Hardware Design & Verification - New priority section -->
         <div>
-          <h4 class="font-semibold text-gray-800 mb-2">Hardware Design & Verification</h4>
+          <h4 class="font-semibold text-gray-800 mb-2">Programming</h4>
           <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium">SystemVerilog</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Verilog</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">UVM</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Functional Coverage</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Testbench Development</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Digital Verification</span>
-          </div>
-        </div>
-
-        <!-- CPU Architecture & Design -->
-        <div>
-          <h4 class="font-semibold text-gray-800 mb-2">CPU Architecture & Design</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">CPU Microarchitecture</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Pipeline Design</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Cache Hierarchy</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Memory Systems</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Performance Analysis</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Power Optimization</span>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="font-semibold text-gray-800 mb-2">Circuit Design & Analysis</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Altium Designer</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">LTspice</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">PCB Layout</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Schematic Design</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Signal Integrity</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Power Analysis</span>
-          </div>
-        </div>
-        
-        <div>
-          <h4 class="font-semibold text-gray-800 mb-2">Programming & Development</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">C/C++</span>
             <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Python</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">C/C++</span>
             <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Java</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">VHDL</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">MATLAB</span>
             <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Git</span>
             <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Linux/Bash</span>
           </div>
         </div>
-
         <div>
-          <h4 class="font-semibold text-gray-800 mb-2">Hardware & Test Equipment</h4>
+          <h4 class="font-semibold text-gray-800 mb-2">Backend & Data</h4>
           <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">FPGA Development</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Oscilloscopes</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Spectrum Analyzers</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">EDA Tools</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Hardware Debugging</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">I2C/SPI/USB</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Flask</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">SQLite</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">REST APIs</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Testing</span>
           </div>
         </div>
-
         <div>
-          <h4 class="font-semibold text-gray-800 mb-2">RF & Communications</h4>
+          <h4 class="font-semibold text-gray-800 mb-2">Systems</h4>
           <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">RF Testing</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Antenna Design</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">EMI/EMC</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Wireless Systems</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Bluetooth LE</span>
-            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Spectrum Analysis</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Profiling</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Performance</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs">Linux Internals</span>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <script>
     // Weather API demo
     function getWeather() {
@@ -244,12 +161,8 @@
       resultDiv.textContent = 'Loading...';
       fetch(`https://wttr.in/${encodeURIComponent(city)}?format=%l:+%c+%t+%w`)
         .then(res => res.text())
-        .then(data => {
-          resultDiv.textContent = data;
-        })
-        .catch(() => {
-          resultDiv.textContent = 'Error fetching weather data.';
-        });
+        .then(data => { resultDiv.textContent = data; })
+        .catch(() => { resultDiv.textContent = 'Error fetching weather data.'; });
     }
     window.onload = getWeather;
   </script>
